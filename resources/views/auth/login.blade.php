@@ -11,7 +11,7 @@
         @endif
 
         <div class="flex justify-center">
-            <span class="pt-1 text-3xl font-medium">Masuk</span>
+            <span class="pt-1 text-3xl font-medium">{{ __('Sign In') }}</span>
         </div>
         <form method="POST" action="{{ route('login') }}">
             @csrf
