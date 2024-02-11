@@ -10,7 +10,7 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div class="flex justify-center pt-5">
+            <div class="flex justify-center pt-4">
                 <div class="w-full">
                     <x-label for="name" value="{{ __('Name') }}" />
                     <x-input id="name" class="block w-full mt-1" type="text" name="name" :value="old('name')"

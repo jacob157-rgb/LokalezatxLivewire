@@ -1,4 +1,4 @@
-<div class="flex flex-col h-screen bg-primary lg:flex lg:flex-row-reverse">
+<div class="flex flex-col h-auto bg-primary lg:flex lg:flex-row-reverse">
     <div class="flex flex-col items-center justify-center basis-1/2">
         {{ $logo }}
     </div>
