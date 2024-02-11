@@ -18,8 +18,6 @@
             </div>
         @endif
 
-        <x-validation-errors class="mb-4" />
-
         <form method="POST" action="{{ route('password.email') }}">
             @csrf
 
@@ -29,6 +27,8 @@
                     required autofocus autocomplete="username" />
             </div>
 
+            <x-validation-errors class="mt-1"/>
+            
             <div class="flex items-center justify-end mt-4">
                 <x-button>
                     {{ __('Email Password Reset Link') }}
