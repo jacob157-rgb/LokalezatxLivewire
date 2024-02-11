@@ -4,38 +4,54 @@
             <x-authentication-card-logo />
         </x-slot>
 
-        <div class="mb-4 text-sm text-gray-600">
+        <div class="flex justify-center">
+            <span class="pt-1 text-3xl font-medium">{{ __('Verify Email') }}</span>
+        </div>
+        <div class="pt-5 mb-4 text-sm text-center text-gray-600">
             {{ __('Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
         </div>
 
+        <div class="flex pt-5 text-center">
+            <div class="w-full">
+                <span style="font-variation-settings: 'wght' 600" class="text-9xl text-primary material-symbols-outlined">
+                    mail
+                </span>
+            </div>
+        </div>
+
         @if (session('status') == 'verification-link-sent')
-            <div class="mb-4 font-medium text-sm text-green-600">
+            <div class="mb-4 text-sm font-medium text-center text-green-600">
                 {{ __('A new verification link has been sent to the email address you provided in your profile settings.') }}
             </div>
         @endif
 
-        <div class="mt-4 flex items-center justify-between">
-            <form method="POST" action="{{ route('verification.send') }}">
-                @csrf
+        <form method="POST" action="{{ route('verification.send') }}">
+            @csrf
 
-                <div>
+            <div class="flex justify-center pt-5">
+                <div class="w-full">
                     <x-button type="submit">
                         {{ __('Resend Verification Email') }}
                     </x-button>
                 </div>
-            </form>
+            </div>
+        </form>
 
-            <div>
-                <a
-                    href="{{ route('profile.show') }}"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
+        <div class="flex justify-center pt-5 text-center">
+            <div class="w-full">
+                <a href="{{ route('profile.show') }}"
+                class="w-full py-3 font-semibold text-primary rounded-xl hover:underline">
                     {{ __('Edit Profile') }}</a>
+            </div>
+        </div>
 
+        <div class="flex justify-center pt-2 text-center">
+            <div class="w-full">
                 <form method="POST" action="{{ route('logout') }}" class="inline">
                     @csrf
 
-                    <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ms-2">
+                    <button type="submit"
+                    class="w-full py-3 font-semibold text-primary rounded-xl hover:underline">
                         {{ __('Log Out') }}
                     </button>
                 </form>

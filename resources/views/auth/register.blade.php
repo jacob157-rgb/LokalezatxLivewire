@@ -42,6 +42,8 @@
                 </div>
             </div>
 
+            <x-validation-errors class="mt-1"/>
+
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-4">
                     <x-label for="terms">
