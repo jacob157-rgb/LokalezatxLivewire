@@ -80,8 +80,8 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <span>{{ __("Don't have an account yet? ")}}<a href="{{ route('register') }}"
-                        class="w-full py-3 font-semibold text-primary rounded-xl hover:underline">{{ __('Sign Up here')}}</a></span>
+                <span>{{ __("Don't have an account yet?")}}<a href="{{ route('register') }}"
+                        class="w-full py-3 font-semibold ms-1 text-primary rounded-xl hover:underline">{{ __('Sign Up here')}}</a></span>
             </div>
 
             </div>

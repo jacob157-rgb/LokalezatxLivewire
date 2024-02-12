@@ -101,8 +101,8 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <span>{{ __("Already have an account? ")}}<a href="{{ route('login') }}"
-                        class="w-full py-3 font-semibold text-primary rounded-xl hover:underline">{{ __('Sign In here')}}</a></span>
+                <span>{{ __("Already have an account?")}}<a href="{{ route('login') }}"
+                        class="w-full py-3 font-semibold ms-1 text-primary rounded-xl hover:underline">{{ __('Sign In here')}}</a></span>
             </div>
 
         </form>
