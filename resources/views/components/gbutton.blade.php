@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-    <a href="{{-- {{ route('socialite.redirect', ['provider' => 'google']) }} --}}"
+    <a href="{{ route('oauth.redirect', ['provider' => 'google']) }}"
         class="flex items-center justify-center w-full py-2 text-lg text-center border border-black rounded-xl"><svg
             class="w-6 h-6 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326667 333333"
             shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
