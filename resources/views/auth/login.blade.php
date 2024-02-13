@@ -1,4 +1,4 @@
-<x-guest-layout class="bg-primary">
+<x-auth-layout class="bg-primary">
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />

@@ -28,8 +28,6 @@
 </head>
 
 <body>
-    @livewire('navigation-menu')
-    
     <div>
         {{ $slot }}
     </div>

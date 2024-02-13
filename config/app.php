@@ -170,8 +170,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
         \App\Providers\SocialstreamServiceProvider::class,
-        \SocialiteProviders\Manager\ServiceProvider::class
     ])->toArray(),
 
     /*

@@ -6,15 +6,15 @@ use JoelButcher\Socialstream\Providers;
 
 return [
     'middleware' => ['web'],
-    'prompt' => 'Continue with',
+    'prompt' => 'Or Login Via',
     'providers' => [
         Providers::google(),
     ],
     'features' => [
-        // Features::providerAvatars(),
         Features::createAccountOnFirstLogin(),
-        Features::loginOnRegistration(),
+        // Features::generateMissingEmails(),
         Features::rememberSession(),
+        Features::providerAvatars(),
         Features::refreshOAuthTokens(),
     ],
     'home' => RouteServiceProvider::HOME,
